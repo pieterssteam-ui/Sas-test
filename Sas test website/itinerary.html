@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Voyage Itinerary - School at Sea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🗺️ Our Voyage Itinerary</h1>
+            <p class="subtitle">Follow our journey across the seas</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="itinerary.html" class="active">Itinerary</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>Our Voyage Route</h2>
+            <p>We'll be visiting [number] amazing countries during our voyage. Each port offers unique cultural experiences, academic field trips, and unforgettable adventures.</p>
+            
+            <h3>Port Cities We'll Visit</h3>
+            <div class="itinerary">
+                <div class="port-card">
+                    <h3>🇵🇹 Portugal</h3>
+                    <p>Lisbon</p>
+                    <small>[Dates]</small>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Explore historic neighborhoods and learn about Portugal's maritime history</p>
+                </div>
+                <div class="port-card">
+                    <h3>🇪🇸 Spain</h3>
+                    <p>Cádiz</p>
+                    <small>[Dates]</small>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Discover ancient architecture and vibrant Spanish culture</p>
+                </div>
+                <div class="port-card">
+                    <h3>🇲🇦 Morocco</h3>
+                    <p>Casablanca</p>
+                    <small>[Dates]</small>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Experience the magic of North Africa and traditional markets</p>
+                </div>
+                <div class="port-card">
+                    <h3>🇬🇭 Ghana</h3>
+                    <p>Tema</p>
+                    <small>[Dates]</small>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Learn about West African culture and history</p>
+                </div>
+                <div class="port-card">
+                    <h3>🇿🇦 South Africa</h3>
+                    <p>Cape Town</p>
+                    <small>[Dates]</small>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Explore the beauty of the Cape and learn about South African heritage</p>
+                </div>
+                <div class="port-card">
+                    <h3>🇮🇳 India</h3>
+                    <p>Chennai</p>
+                    <small>[Dates]</small>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Immerse yourself in Indian culture, cuisine, and traditions</p>
+                </div>
+                <div class="port-card">
+                    <h3>🇲🇾 Malaysia</h3>
+                    <p>Penang</p>
+                    <small>[Dates]</small>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Discover the multicultural heritage of Southeast Asia</p>
+                </div>
+                <div class="port-card">
+                    <h3>🇻🇳 Vietnam</h3>
+                    <p>Ho Chi Minh City</p>
+                    <small>[Dates]</small>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Experience Vietnamese history, culture, and cuisine</p>
+                </div>
+            </div>
+            
+            <p><em>Note: Update these ports based on your actual itinerary!</em></p>
+
+            <h3>Life at Sea</h3>
+            <p>Between ports, we'll have full days of classes, ship activities, and time to bond with our shipboard community. The ship becomes our campus, home, and adventure base all in one!</p>
+
+            <h3>Field Programs</h3>
+            <p>Each port offers organized field programs and free time to explore. From historical tours to cultural exchanges, service learning to adventure activities, there's something for everyone.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Your Name] - School at Sea Journey. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+                <a href="#">📺</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

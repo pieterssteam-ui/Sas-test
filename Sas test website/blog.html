@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - My School at Sea Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📝 My Blog</h1>
+            <p class="subtitle">Follow my daily adventures at sea</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="itinerary.html">Itinerary</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>Latest Blog Posts</h2>
+            <p>Welcome to my blog! Here I'll share my experiences, thoughts, and adventures throughout my School at Sea voyage.</p>
+            
+            <div class="blog-posts">
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>Preparing for My Voyage</h3>
+                    </div>
+                    <div class="blog-card-body">
+                        <p class="blog-card-date">October 31, 2025</p>
+                        <p>As I count down the days until departure, I'm busy preparing for this incredible adventure. From packing lists to visa applications, here's what I've been up to...</p>
+                        <a href="#" style="color: #2a5298;">Read more →</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>Why I Chose School at Sea</h3>
+                    </div>
+                    <div class="blog-card-body">
+                        <p class="blog-card-date">October 15, 2025</p>
+                        <p>When I first heard about studying at sea, I knew it was the perfect opportunity for me. Here's my story and what I hope to gain from this experience...</p>
+                        <a href="#" style="color: #2a5298;">Read more →</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>Meeting My Shipmates</h3>
+                    </div>
+                    <div class="blog-card-body">
+                        <p class="blog-card-date">October 1, 2025</p>
+                        <p>We've started connecting online before the voyage begins. I'm so excited to meet everyone in person and start this journey together...</p>
+                        <a href="#" style="color: #2a5298;">Read more →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>First Days at Sea</h3>
+                    </div>
+                    <div class="blog-card-body">
+                        <p class="blog-card-date">Coming Soon...</p>
+                        <p>Once the voyage begins, I'll share my first impressions of life on board, meeting my cabin mates, and adjusting to ship life...</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>First Port: Lisbon, Portugal</h3>
+                    </div>
+                    <div class="blog-card-body">
+                        <p class="blog-card-date">Coming Soon...</p>
+                        <p>I'll document my first port experience, exploring the historic streets of Lisbon and trying local cuisine...</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>Life on Board</h3>
+                    </div>
+                    <div class="blog-card-body">
+                        <p class="blog-card-date">Coming Soon...</p>
+                        <p>From classes on deck to evening activities, I'll share what daily life is like on the ship...</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Blog Categories</h3>
+            <p>I'll be writing about:</p>
+            <ul>
+                <li>🚢 Life on board the ship</li>
+                <li>🌍 Port experiences and cultural adventures</li>
+                <li>📚 Academic insights and classes</li>
+                <li>🤝 Meeting people from around the world</li>
+                <li>🌊 Personal growth and reflections</li>
+                <li>📸 Photo stories from each destination</li>
+            </ul>
+
+            <p><strong>Stay tuned for regular updates!</strong> I'll try to post as often as possible, though internet at sea can be unpredictable.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Your Name] - School at Sea Journey. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+                <a href="#">📺</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

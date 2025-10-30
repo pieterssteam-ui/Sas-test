@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - My School at Sea Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📸 Photo Gallery</h1>
+            <p class="subtitle">Visual memories from my voyage</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="itinerary.html">Itinerary</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>Photo Gallery</h2>
+            <p>Check back soon for photos from my voyage! I'll be adding pictures from each port, life on board, and all the amazing experiences along the way.</p>
+            
+            <h3>Photo Categories</h3>
+            <div class="gallery">
+                <div class="gallery-item" onclick="alert('Life on Board photos coming soon!')">
+                    🚢
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">Life on Board</p>
+                </div>
+                <div class="gallery-item" onclick="alert('Port photos coming soon!')">
+                    🏛️
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">Port Cities</p>
+                </div>
+                <div class="gallery-item" onclick="alert('Food photos coming soon!')">
+                    🍽️
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">Local Cuisine</p>
+                </div>
+                <div class="gallery-item" onclick="alert('Sunset photos coming soon!')">
+                    🌅
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">Sunsets at Sea</p>
+                </div>
+                <div class="gallery-item" onclick="alert('Cultural photos coming soon!')">
+                    🎭
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">Cultural Experiences</p>
+                </div>
+                <div class="gallery-item" onclick="alert('Friendship photos coming soon!')">
+                    👥
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">New Friends</p>
+                </div>
+                <div class="gallery-item" onclick="alert('Academic photos coming soon!')">
+                    📚
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">Classes & Learning</p>
+                </div>
+                <div class="gallery-item" onclick="alert('Adventure photos coming soon!')">
+                    🏄
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">Adventures</p>
+                </div>
+            </div>
+
+            <h3>Coming Soon...</h3>
+            <p>Once my voyage begins, this gallery will be filled with amazing photos from:</p>
+            <ul>
+                <li>📷 Daily life on board the ship</li>
+                <li>🌅 Beautiful sunrises and sunsets at sea</li>
+                <li>🏛️ Historic sites and monuments in each port</li>
+                <li>🍜 Local food and culinary experiences</li>
+                <li>🎭 Cultural performances and traditions</li>
+                <li>👥 My amazing shipmates and new friends</li>
+                <li>📚 Academic field trips and classes</li>
+                <li>🏖️ Beaches, landscapes, and natural wonders</li>
+                <li>🛍️ Local markets and shopping</li>
+                <li>🎉 Shipboard activities and events</li>
+            </ul>
+
+            <p><strong>Check back regularly!</strong> I'll be updating this gallery throughout my voyage with new photos from each destination and experience.</p>
+
+            <div class="text-center mt-2">
+                <button class="btn" onclick="alert('Subscription feature coming soon!')">
+                    📸 Get Notified of New Photos
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Your Name] - School at Sea Journey. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+                <a href="#">📺</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

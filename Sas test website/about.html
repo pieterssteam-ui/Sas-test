@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About My Voyage - School at Sea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌊 About My Voyage</h1>
+            <p class="subtitle">Learn more about my School at Sea journey</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="itinerary.html">Itinerary</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>About My Voyage</h2>
+            <p><strong>Program:</strong> [Your Program Name]</p>
+            <p><strong>Ship:</strong> [Ship Name]</p>
+            <p><strong>Duration:</strong> [Start Date] - [End Date]</p>
+            <p><strong>Home Institution:</strong> [Your School/University]</p>
+            <p><strong>Major:</strong> [Your Major/Field of Study]</p>
+            
+            <h3>Why I Chose School at Sea</h3>
+            <p>[Write about your motivations for joining this program. What excites you most? What do you hope to learn? How do you think this experience will impact your future?]</p>
+            
+            <h3>My Goals</h3>
+            <ul>
+                <li>🎯 Academic Goal: [Your academic objective]</li>
+                <li>🌍 Personal Goal: [Your personal growth objective]</li>
+                <li>📚 Professional Goal: [Your career-related objective]</li>
+                <li>🤝 Cultural Goal: [Your cultural exchange objective]</li>
+            </ul>
+
+            <h3>What I'm Most Excited About</h3>
+            <p>[Share your excitement about specific aspects of the voyage - visiting certain countries, meeting new people, the academic courses, life on board, etc.]</p>
+
+            <h3>My Fears and Challenges</h3>
+            <p>[Be honest about what you're nervous about - seasickness, being away from home, cultural adjustments, etc. This makes your journey relatable to readers.]</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Your Name] - School at Sea Journey. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+                <a href="#">📺</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
