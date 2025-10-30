@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School at Sea Journey - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌊 My School at Sea Journey</h1>
+            <p class="subtitle">[Your Name] - [Voyage Dates] - [Ship Name/Program]</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="itinerary.html">Itinerary</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <div class="hero-image">
+                ⚓ School at Sea ⚓
+            </div>
+            <h2>Welcome Aboard!</h2>
+            <p>Hello! I'm [Your Name], and I'm about to embark on the adventure of a lifetime with [Your School at Sea Program]. This website will document my journey as I sail across the oceans, visit amazing countries, and continue my education in the most unique classroom in the world - a ship!</p>
+            <p>Join me as I share my experiences, photos, and insights from this incredible voyage. From classroom discussions on deck to exploring new cultures in port cities, I'll be documenting it all right here.</p>
+            
+            <h3>Quick Links</h3>
+            <div class="itinerary">
+                <div class="port-card">
+                    <h3>📅</h3>
+                    <p><a href="itinerary.html" style="color: white;">View Itinerary</a></p>
+                </div>
+                <div class="port-card">
+                    <h3>📝</h3>
+                    <p><a href="blog.html" style="color: white;">Read Blog</a></p>
+                </div>
+                <div class="port-card">
+                    <h3>📸</h3>
+                    <p><a href="gallery.html" style="color: white;">See Photos</a></p>
+                </div>
+                <div class="port-card">
+                    <h3>📬</h3>
+                    <p><a href="contact.html" style="color: white;">Contact Me</a></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="countdown">
+            <h2>⏰ Voyage Countdown</h2>
+            <p>Days until I set sail:</p>
+            <div class="countdown-timer">
+                <div class="time-unit">
+                    <h3 id="days">00</h3>
+                    <p>Days</p>
+                </div>
+                <div class="time-unit">
+                    <h3 id="hours">00</h3>
+                    <p>Hours</p>
+                </div>
+                <div class="time-unit">
+                    <h3 id="minutes">00</h3>
+                    <p>Minutes</p>
+                </div>
+                <div class="time-unit">
+                    <h3 id="seconds">00</h3>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Your Name] - School at Sea Journey. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+                <a href="#">📺</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const voyageDate = new Date('2025-12-31T00:00:00').getTime(); // Update with your actual departure date
+            const now = new Date().getTime();
+            const distance = voyageDate - now;
+
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            } else {
+                document.querySelector('.countdown').innerHTML = '<h2>🎉 Voyage Has Begun!</h2><p>I\'m currently at sea! Check my blog for updates.</p>';
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
